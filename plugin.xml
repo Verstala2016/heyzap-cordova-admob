@@ -57,12 +57,12 @@
   </platform>
   <!-- / iOS -->
 
-  <!-- Android 
+  <!-- Android -->
   <platform name="android">
 
     <framework src="com.google.android.gms:play-services-ads:+" />
 
   </platform>
-  -- / Android -->
+  <-- / Android -->
 
 </plugin>
