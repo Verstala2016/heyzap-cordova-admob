@@ -59,8 +59,9 @@
 
   <!-- Android -->
   <platform name="android">
-
-    <framework src="com.google.android.gms:play-services-ads:+" />
+  
+	<!-- AdMob -->
+	<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
 
   </platform>
   <!-- / Android -->
