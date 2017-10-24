@@ -5,7 +5,7 @@ This is a custom Apache Cordova plugin for AdMob/Google Mobile Ads to be used wi
 
 SDK Verisons
 ------------
-- iOS: 7.18.0
+- iOS: 7.24.1
 - Android: Latest Google Play Services
 
 Installing:
