@@ -7,16 +7,17 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GoogleMobileAds/GADRequestError.h>
+#import <GoogleMobileAds/GADAdDelegate.h>
 #import <GoogleMobileAds/GoogleMobileAdsDefines.h>
 
 @class GADInterstitial;
+@class GADRequestError;
 
 GAD_ASSUME_NONNULL_BEGIN
 
 /// Delegate for receiving state change messages from a GADInterstitial such as interstitial ad
 /// requests succeeding/failing.
-@protocol GADInterstitialDelegate<NSObject>
+@protocol GADInterstitialDelegate<GADAdDelegate>
 
 @optional
 

@@ -7,7 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <GoogleMobileAds/GADNativeAd.h>
 #import <GoogleMobileAds/GoogleMobileAdsDefines.h>
 
 GAD_ASSUME_NONNULL_BEGIN
@@ -19,11 +18,6 @@ GAD_ASSUME_NONNULL_BEGIN
 /// the GADAdChoicesView. By default, AdChoices is placed in the top right corner of
 /// GADNativeAppInstallAdView and GADNativeContentAdView.
 @interface GADAdChoicesView : UIView
-
-/// Native ad object that contains the AdChoices asset. Set this property to populate this view's
-/// content.
-@property(nonatomic, weak) GADNativeAd *nativeAd;
-
 @end
 
 GAD_ASSUME_NONNULL_END

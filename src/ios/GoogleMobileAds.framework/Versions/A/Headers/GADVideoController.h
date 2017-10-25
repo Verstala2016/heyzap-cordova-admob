@@ -42,8 +42,6 @@ GAD_ASSUME_NONNULL_BEGIN
 /// Indicates if video custom controls (i.e. play/pause/mute/unmute) are enabled.
 - (BOOL)customControlsEnabled;
 
-/// Indicates if video click to expand behavior is enabled.
-- (BOOL)clickToExpandEnabled;
 @end
 
 GAD_ASSUME_NONNULL_END

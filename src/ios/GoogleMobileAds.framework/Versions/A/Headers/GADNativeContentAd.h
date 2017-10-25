@@ -22,7 +22,7 @@ GAD_ASSUME_NONNULL_BEGIN
 
 /// Native content ad. To request this ad type, you need to pass kGADAdLoaderAdTypeNativeContent
 /// (see GADAdLoaderAdTypes.h) to the |adTypes| parameter in GADAdLoader's initializer method. If
-/// you request this ad type, your delegate must conform to the GADNativeContentAdLoaderDelegate
+/// you request this ad type, your delegate must conform to the GADNativeContentAdRequestDelegate
 /// protocol.
 @interface GADNativeContentAd : GADNativeAd
 
@@ -45,15 +45,6 @@ GAD_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly, copy, GAD_NULLABLE) NSString *advertiser;
 /// Video controller for controlling video playback in GADNativeContentAdView's mediaView.
 @property(nonatomic, strong, readonly) GADVideoController *videoController;
-
-/// Registers ad view and asset views created from this native ad.
-/// @param assetViews Dictionary of asset views keyed by asset IDs.
-- (void)registerAdView:(UIView *)adView assetViews:(NSDictionary<NSString *, UIView *> *)assetViews;
-
-/// Unregisters ad view from this native ad. The corresponding asset views will also be
-/// unregistered.
-- (void)unregisterAdView;
-
 @end
 
 #pragma mark - Protocol and constants
